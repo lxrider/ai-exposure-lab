@@ -4,33 +4,21 @@
 
 Please, take 2 minutes and a blank page.
 
-Generative AI is already being used at work.
-
-Employees use ChatGPT, Claude, Gemini and other AI services to write emails, summarize documents, analyze information, understand code or simply work faster.
+Generative AI is already being used at work. Employees use ChatGPT, Claude, Gemini and other AI services to write emails, summarize documents, analyze information, understand code or simply work faster.
 
 The problem is simple:
 
 > **Company information can leave the organization through AI without anyone really stopping to ask whether it should.**
 
-A confidential email can be pasted into ChatGPT.
-
-Source code can be sent to Claude.
-
-A customer document can be uploaded to Gemini.
-
-An employee can even bypass the corporate network entirely by using a personal smartphone over 5G.
+A confidential email can be pasted into ChatGPT. Source code can be sent to Claude. A customer document can be uploaded to Gemini. An employee can even bypass the corporate network entirely by using a personal smartphone over 5G.
 
 Depending on the information involved, this can become an unauthorized disclosure and create a real security, privacy, contractual or business risk.
 
 And that is only the first problem.
 
-AI is also increasingly used to explain, recommend, prioritize and sometimes decide.
+> **How much cognitive tasks are we starting to delegate to AI?**
 
-So another question appears:
-
-> **How much human judgement are we starting to delegate to AI?**
-
-This lab starts from this simple point of vue.
+Ok... Let's take a cup of coffe :)
 
 ---
 
