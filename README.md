@@ -28,15 +28,7 @@ So another question appears:
 
 > **How much human judgement are we starting to delegate to AI?**
 
-This lab starts here.
-
-Not with a framework.
-
-Not with a product.
-
-Not with an AI gateway.
-
-With the problem.
+This lab starts from this simple point of vue.
 
 ---
 
