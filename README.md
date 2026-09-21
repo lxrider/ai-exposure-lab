@@ -141,18 +141,10 @@ The goal is to make AI use safer, clearer and easier to govern.
 
 ## The lab
 
-We start from simple professional scenarios.
+Start with simple scenarios.
 
-We test the questions.
+Test the questions.
 
-We look at where they work and where they fail.
+Learn what works, what fails, and what needs to be built.
 
-Only then do we decide whether governance, awareness, technical controls or something else is actually needed.
-
-No framework first.
-
-No product first.
-
-No technical control before understanding what we are trying to control.
-
-**Understand first. Then decide what needs to be built.**
+Understand first. Build only what is needed.
