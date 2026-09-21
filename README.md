@@ -2,6 +2,8 @@
 
 > **Is there a pilot in the plane? ✈️**
 
+Please, take 2 minutes and a blank page.
+
 Generative AI is already being used at work.
 
 Employees use ChatGPT, Claude, Gemini and other AI services to write emails, summarize documents, analyze information, understand code or simply work faster.
