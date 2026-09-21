@@ -12,9 +12,7 @@ The problem is simple:
 
 A confidential email can be pasted into ChatGPT. Source code can be sent to Claude. A customer document can be uploaded to Gemini. An employee can even bypass the corporate network entirely by using a personal smartphone over 5G.
 
-Depending on the information involved, this can become an unauthorized disclosure and create a real security, privacy, contractual or business risk.
-
-And that is only the first problem.
+Depending on the information involved, this can become an unauthorized disclosure and create a real security, privacy, contractual or business risk. And that is only the first problem.
 
 > **How much cognitive tasks are we starting to delegate to AI?**
 
