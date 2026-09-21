@@ -2,77 +2,75 @@
 
 > **Is there a pilot in the plane? ✈️**
 
-Please, take 2 minutes and a blank page.
+Generative AI is already used at work.
 
-Generative AI is already being used at work. Employees use ChatGPT, Claude, Gemini and other AI services to write emails, summarize documents, analyze information, understand code or simply work faster.
+Employees use ChatGPT, Claude, Gemini and other AI services with emails, documents, source code, customer information or internal data.
 
-The problem is simple:
+Sometimes nobody has clearly decided whether that information should be sent there.
 
-> **Company information can leave the organization through AI without anyone really stopping to ask whether it should.**
+That creates a simple governance problem:
 
-A confidential email can be pasted into ChatGPT. Source code can be sent to Claude. A customer document can be uploaded to Gemini. An employee can even bypass the corporate network entirely by using a personal smartphone over 5G.
+> **Who can use what information, with which AI, when, why, and under which conditions?**
 
-Depending on the information involved, this can become an unauthorized disclosure and create a real security, privacy, contractual or business risk. And that is only the first problem.
+And another question follows:
 
-> **How much cognitive tasks are we starting to delegate to AI?**
+> **How much human judgement are we willing to delegate to AI?**
 
-Ok... Let's take a cup of coffe :)
+## The problem
 
----
+A developer may legitimately have access to source code.
 
-## Two questions
+That answers:
 
-The first experiments focus on two questions:
+> **Who can access it?**
 
-> **What are we exposing to AI?**
+It does not answer:
 
-and:
+> **Can they send it to an external AI service?**
 
-> **What are we delegating to AI?**
-
-These are different problems, but they meet at the same point:
-
-> **Who is actually in control?**
-
----
-
-## Information exposure
-
-Having access to company information does not automatically mean being allowed to send it to an external AI service.
+So:
 
 > **Access right ≠ Disclosure authority**
 
-A developer may legitimately access source code.
+The same applies to customer emails, financial information, architecture, credentials or confidential documents.
 
-That does not automatically mean the code can be sent to an external AI provider.
-
-The same applies to:
-
-* customer information;
-* internal emails;
-* architecture;
-* financial information;
-* security data;
-* credentials;
-* confidential documents.
-
-The destination matters too.
+To understand an AI use case, start with a few simple questions:
 
 ```text
-Personal AI account
-        ≠
-Organization-approved AI service
+WHO?
+Who is using the information?
+
+WHAT?
+What information is involved?
+
+WHY?
+Why is AI needed?
+
+WHEN?
+In which business context?
+
+WHERE?
+Which AI service receives it?
+
+HOW?
+Corporate device?
+Personal account?
+Smartphone over 5G?
+
+HOW MUCH?
+How much information is really necessary?
+
+WHO DECIDES?
+Who can authorize this use?
 ```
 
-And the network does not solve everything.
+The goal is not to create a huge framework.
 
-A corporate device can use a personal AI account.
+It is to understand the situation well enough to make a sensible decision.
 
-A personal smartphone can bypass corporate controls completely.
+## Another question: what are we delegating?
 
----
-
-## Cognitive delegation
+Information exposure is only one side of the problem.
 
 There is also a difference between asking AI to:
 
@@ -86,36 +84,29 @@ Decide
 Act
 ```
 
-This is not a formal scale.
+The further we go, the more human judgement may be involved.
 
-It simply shows that AI can move from assistance toward greater involvement in human judgement.
+So we also need to ask:
 
-Rewriting an email is not the same as deciding which security control should be implemented.
+> **What are we asking the AI to do, and who remains responsible for the result?**
 
-So another principle appears:
+## A simple way in
 
-> **Assistance ≠ Decision**
-
-At some point, somebody must still own the judgement and the consequences.
-
----
-
-## MVP
-
-The first MVP looks at a human employee using an external generative AI service for professional work.
-
-For each scenario, we ask:
+For now, keep the model simple:
 
 ```text
-What information is involved?
-Why is AI needed?
-Which AI receives it?
-What are we asking the AI to do?
-Who can authorize the disclosure?
-Who owns the final decision?
+Understand the use
+        ↓
+Understand the information
+        ↓
+Understand the destination
+        ↓
+Understand the level of delegation
+        ↓
+Decide what is acceptable
 ```
 
-Then we try to reach a simple answer:
+Possible answers:
 
 ```text
 ALLOWED
@@ -124,45 +115,44 @@ NOT ALLOWED
 UNKNOWN
 ```
 
-If these questions are not enough, the scenarios should show us why.
+`UNKNOWN` is not a failure.
 
----
+It means we found something that needs a decision.
 
-## For now
+## What this lab should give us
 
-We are deliberately not starting with:
+At the end of the journey, we should be able to:
 
-* prompt injection;
-* RAG;
-* MCP;
-* autonomous agents;
-* model poisoning;
-* AI infrastructure security;
-* detailed technical controls;
-* full enterprise AI governance.
+* frame an AI exposure quickly;
+* understand what information is involved;
+* identify who can access and disclose it;
+* understand where the information is going;
+* identify how much judgement is being delegated;
+* spot a few obvious quick wins;
+* know where to start without trying to solve everything at once.
 
-The lab should only grow when the problem requires it.
+This is not about saying **no** to AI.
 
----
+It is not about making people feel guilty for using tools that help them work better.
 
-## Approach
+The goal is to make AI use safer, clearer and easier to govern.
 
-```text
-UNDERSTAND
-   ↓
-TEST
-   ↓
-LEARN
-   ↓
-BUILD
-```
+> **Take the right flight, know where you are going, and enjoy the journey.**
 
-Start with the problem.
+## The lab
 
-Question the assumptions.
+We start from simple professional scenarios.
 
-Test them against reality.
+We test the questions.
 
-Then build only what is needed.
+We look at where they work and where they fail.
 
-**Work in progress.**
+Only then do we decide whether governance, awareness, technical controls or something else is actually needed.
+
+No framework first.
+
+No product first.
+
+No technical control before understanding what we are trying to control.
+
+**Understand first. Then decide what needs to be built.**
