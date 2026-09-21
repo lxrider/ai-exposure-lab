@@ -1,6 +1,6 @@
 # AI Exposure Lab
 
-> **Is there a pilot in the plane?**
+> **Is there a pilot in the plane? ✈️**
 
 Generative AI is already being used at work.
 
