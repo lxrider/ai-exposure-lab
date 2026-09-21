@@ -1,83 +1,141 @@
 # AI Exposure Lab
 
-A practical cybersecurity lab about the professional use of generative AI and the exposure of company information.
+> **Is there a pilot in the plane?**
 
-## The idea
+Generative AI is already being used at work.
 
-Generative AI entered everyday life very quickly.
+Employees use ChatGPT, Claude, Gemini and other AI services to write emails, summarize documents, analyze information, understand code or simply work faster.
 
-Employees may already use ChatGPT, Claude, Gemini or other AI tools personally before their organization has defined how they should be used at work.
+The problem is simple:
 
-Then a professional need appears.
+> **Company information can leave the organization through AI without anyone really stopping to ask whether it should.**
 
-```text
-Employee
-   ↓
-Professional task
-   ↓
-Company information
-   ↓
-AI service
-```
+A confidential email can be pasted into ChatGPT.
 
-The employee may simply want to rewrite an email, understand some code or summarize a document.
+Source code can be sent to Claude.
 
-The first security question is not:
+A customer document can be uploaded to Gemini.
 
-> How do we secure AI?
+An employee can even bypass the corporate network entirely by using a personal smartphone over 5G.
 
-It is:
+Depending on the information involved, this can become an unauthorized disclosure and create a real security, privacy, contractual or business risk.
 
-> **Can this person provide this information to this AI service for this purpose?**
+And that is only the first problem.
 
-## A first principle
+AI is also increasingly used to explain, recommend, prioritize and sometimes decide.
 
-Having access to information does not automatically mean being allowed to share it with an external service.
+So another question appears:
+
+> **How much human judgement are we starting to delegate to AI?**
+
+This lab starts here.
+
+Not with a framework.
+
+Not with a product.
+
+Not with an AI gateway.
+
+With the problem.
+
+---
+
+## Two questions
+
+The first experiments focus on two questions:
+
+> **What are we exposing to AI?**
+
+and:
+
+> **What are we delegating to AI?**
+
+These are different problems, but they meet at the same point:
+
+> **Who is actually in control?**
+
+---
+
+## Information exposure
+
+Having access to company information does not automatically mean being allowed to send it to an external AI service.
 
 > **Access right ≠ Disclosure authority**
 
-The same question applies to source code, customer emails, internal documents, architecture diagrams or any other company information.
+A developer may legitimately access source code.
 
-## The problem
+That does not automatically mean the code can be sent to an external AI provider.
 
-The decision depends on more than the information itself.
+The same applies to:
 
-We need to understand:
+* customer information;
+* internal emails;
+* architecture;
+* financial information;
+* security data;
+* credentials;
+* confidential documents.
 
-* what information is involved;
-* who is using it;
-* why AI is needed;
-* which AI service receives it;
-* how much information is really necessary;
-* who has authority to allow the disclosure.
-
-The network is only part of the problem.
-
-A corporate laptop may use a personal AI account.
-
-A personal smartphone may bypass the corporate network completely.
-
-So the real question is:
-
-> **How much control does the organization actually have over the exposure?**
-
-## The approach
-
-Start small.
-
-Take one real use case and ask:
+The destination matters too.
 
 ```text
-What information?
-Who can access it?
-Who may disclose it?
-Why?
-To which AI?
-How much is necessary?
-Who decides?
+Personal AI account
+        ≠
+Organization-approved AI service
 ```
 
-Then make a simple decision:
+And the network does not solve everything.
+
+A corporate device can use a personal AI account.
+
+A personal smartphone can bypass corporate controls completely.
+
+---
+
+## Cognitive delegation
+
+There is also a difference between asking AI to:
+
+```text
+Rewrite
+Summarize
+Explain
+Suggest
+Recommend
+Decide
+Act
+```
+
+This is not a formal scale.
+
+It simply shows that AI can move from assistance toward greater involvement in human judgement.
+
+Rewriting an email is not the same as deciding which security control should be implemented.
+
+So another principle appears:
+
+> **Assistance ≠ Decision**
+
+At some point, somebody must still own the judgement and the consequences.
+
+---
+
+## MVP
+
+The first MVP looks at a human employee using an external generative AI service for professional work.
+
+For each scenario, we ask:
+
+```text
+What information is involved?
+Why is AI needed?
+Which AI receives it?
+What are we asking the AI to do?
+Who can authorize the disclosure?
+Who owns the final decision?
+```
+
+Then we try to reach a simple answer:
 
 ```text
 ALLOWED
@@ -86,15 +144,13 @@ NOT ALLOWED
 UNKNOWN
 ```
 
-Learn from real scenarios and improve the model.
+If these questions are not enough, the scenarios should show us why.
 
-## MVP
+---
 
-The first MVP focuses on one situation:
+## For now
 
-> **A human employee intentionally provides company information to an external generative AI service to perform professional work.**
-
-For now, the project does not cover:
+We are deliberately not starting with:
 
 * prompt injection;
 * RAG;
@@ -102,21 +158,31 @@ For now, the project does not cover:
 * autonomous agents;
 * model poisoning;
 * AI infrastructure security;
-* hallucination management;
+* detailed technical controls;
 * full enterprise AI governance.
 
-These may come later.
+The lab should only grow when the problem requires it.
 
-## Guiding question
+---
 
-> **Is there a pilot in the plane?**
+## Approach
 
-In other words:
+```text
+UNDERSTAND
+   ↓
+TEST
+   ↓
+LEARN
+   ↓
+BUILD
+```
 
-> **Who decides whether company information can be exposed to AI, under which conditions, and who owns that decision?**
+Start with the problem.
 
-## Status
+Question the assumptions.
+
+Test them against reality.
+
+Then build only what is needed.
 
 **Work in progress.**
-
-Start with the problem. Test assumptions. Learn from reality. Improve.
