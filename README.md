@@ -2,94 +2,130 @@
 
 > **Is there a pilot in the plane? ✈️**
 
-Generative AI is already used at work. Employees use ChatGPT, Claude, Gemini and other AI services with emails, documents, source code, customer information or internal data.
+**A quick & practical lab to help organizations start governing AI use at work.**
 
-Sometimes nobody has clearly decided whether that information should be sent there. This creates a simple governance problem:
+AI is already part of everyday work. Employees, managers, developers, administrators, suppliers, partners and customers can all use it to save time, analyze information, reason about problems and automate actions.
 
-> **Who can use what information, with which AI, when, why and under which conditions?**
+That is not the problem.
 
-Another question quickly follows:
+People use AI because it creates value. The problem starts when we no longer clearly understand **why it is being used, what business value is at stake, what we expose to it, what we delegate to it, what it can do and who remains responsible**.
 
-> **How much human judgement are we willing to delegate to AI?**
+> **Start with the problem, not the framework.**
 
-## The problem
+## Start with the business
 
-A developer may legitimately have access to source code. That answers one question: **who can access it?**
+Before talking about AI controls, ask two questions:
 
-It does not answer another: **can they send it to an external AI service?**
+> **Why is AI being used here?**  
+> **Why could this particular use become a problem for the business?**
 
-> **Access right ≠ Disclosure authority**
+Understand the expected result first. Identify what has value: customers, people, knowledge, intellectual property, decisions, operations, reputation, money or availability.
 
-The same applies to customer emails, financial information, architecture, credentials or confidential documents.
+Then look at how AI touches that value.
 
-To understand an AI use case, we can start with a few simple questions:
+## Frame the use
 
-```text
-WHO?         Who is using the information?
-WHAT?        What information is involved?
-WHY?         Why is AI needed?
-WHEN?        In which business context?
-WHERE?       Which AI service receives it?
-HOW?         Corporate device, personal account, smartphone over 5G?
-HOW MUCH?    How much information is really necessary?
-WHO DECIDES? Who can authorize this use?
-```
-
-The goal is not to create a huge framework. It is simply to understand the situation well enough to make a sensible decision.
-
-## What are we delegating?
-
-Information exposure is only one side of the problem. There is also a difference between asking AI to:
+For each real use case, observe four factual dimensions:
 
 ```text
-Rewrite → Summarize → Explain → Suggest → Recommend → Decide → Act
+CHANNEL
+Is the use known, approved and managed?
+
+EXPOSURE
+What information reaches AI?
+
+COGNITIVE DELEGATION
+What thinking do we give AI?
+
+ACTION DELEGATION
+What can AI actually do?
 ```
 
-This is not a formal scale. It simply shows that AI can move from assistance towards greater involvement in human judgement.
+Exposure may involve emails, source code, customer data, HR data, architecture, logs, credentials or business context.
 
-Rewriting an email is not the same as recommending which security control should be implemented. The question therefore becomes:
+Cognitive delegation may include summarizing, analyzing, comparing, inferring, reasoning, recommending, planning or deciding.
 
-> **What are we asking the AI to do, and who remains responsible for the result?**
+Action delegation may include reading, creating, sending, modifying, executing or deleting.
 
-## A simple way in
+An approved tool does not automatically make every use case approved.
 
-For now, the model remains deliberately simple:
+> **Access right ≠ disclosure authority.**
+
+## Break it
+
+Change perspective.
+
+> **If I wanted to damage this business value for my own benefit, what would I try to achieve?**
+
+Then remove the attacker:
+
+> **What could simply go wrong?**
+
+The goal is not to create a huge risk register. It is to understand the real problem and define what must remain true for the business.
+
+## Fix the cause, not the symptom
+
+When a problem appears, use a simple Root Cause Countermeasure approach:
 
 ```text
-Understand the use
-        ↓
-Understand the information
-        ↓
-Understand the destination
-        ↓
-Understand the level of delegation
-        ↓
-Decide what is acceptable
+PROBLEM
+What is actually wrong?
+
+ROOT CAUSE
+Why is it happening?
+
+COUNTERMEASURE
+What is the smallest durable response?
 ```
 
-The outcome can also remain simple:
+Do not assume the user is the problem. Someone using a personal AI account may simply be trying to get their job done because no useful approved path exists.
+
+Explain the business risk without blaming or judging the person, then help them achieve the same result more safely.
+
+> **Make the safe path easier than the unsafe one.**
+
+## Prove it
+
+A countermeasure is not useful because it exists. It is useful because it works.
+
+Test the risky path. Test the approved path. Look for obvious bypasses. Check whether the team can still achieve the expected business result.
+
+If the response creates too much friction, people may simply move the behavior somewhere less visible.
+
+## From use cases to governance
+
+Governance should grow from reality, not from a document written in isolation.
 
 ```text
-ALLOWED
-ALLOWED WITH CONDITIONS
-NOT ALLOWED
-UNKNOWN
+OBSERVE REAL USE CASES
+        ↓
+REVIEW THEM
+        ↓
+RCCM + TESTED COUNTERMEASURES
+        ↓
+PLAYBOOKS
+        ↓
+RECURRING RULES
+        ↓
+POLICY
+        ↓
+GOVERNANCE
 ```
 
-`UNKNOWN` is not a failure. It means we have found something that requires a decision.
+Business teams remain at the center. Security, HR, Legal/Privacy, IT/Architecture, Procurement and Management bring different views when they are relevant.
 
-## What this lab should give us
+The objective is not to say **no** to AI. It is to understand why people use it, protect what matters and enable safer use.
 
-At the end of the journey, we should be able to frame an AI exposure quickly and understand the main questions involved: what information is being used, who can access or disclose it, where it is going, how much judgement is being delegated and who owns the decision.
+## Quick start
 
-The objective is also to identify a few practical quick wins and, above all, a simple way to enter the subject without trying to solve everything at once.
+1. Pick one real AI use case from a team.
+2. Run the [Quick AI Use Case Review](doc/quick-review.md).
+3. Challenge the risky parts and find the root cause.
+4. Define the smallest useful countermeasure.
+5. Prove it works in reality.
+6. Turn the result into a short [playbook](doc/playbooks.md).
+7. Promote only recurring, validated rules into [policy](doc/policy.md).
 
-This is not about saying **no** to AI or making people feel guilty for using tools that help them work better. The goal is to make AI use safer, clearer and easier to govern.
+The initial lab uses five practical areas: **HR / Talent Acquisition, Sales, SysAdmin, Development and Suppliers / Third Parties**. See [use-cases.md](doc/use-cases.md).
 
-> **Take the right flight, know where you are going, and enjoy the journey.**
-
-## The lab
-
-Start with simple scenarios, test the questions and learn what works or fails.
-
-**Understand first. Build only what is needed.**
+> **Build. Break. Understand. Rebuild better.**

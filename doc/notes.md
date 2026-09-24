@@ -6,19 +6,17 @@ It started from a question:
 
 > **Is there a pilot in the plane?**
 
-A few ideas helped shape the way we look at the problem. They are influences, not requirements.
+The problem is primarily human and organizational. Technology changes the scale, speed and capability of AI use, but people still need to understand why a rule exists, what business value it protects and how to achieve their goal safely.
 
-## CNIL / GDPR
+The aim is not to blame users for adopting tools that help them work. It is to observe reality, explain the risk in understandable terms and make the safer path usable.
 
-The CNIL and GDPR bring some useful principles:
+A few ideas shape the lab. They are influences, not requirements.
 
-* understand why information is being processed;
-* minimize what is actually needed;
-* think about potential impact;
-* make responsibilities clear;
-* review decisions when the context changes.
+## CNIL / GDPR thinking
 
-For this lab, the main lesson is simple:
+Useful principles include understanding purpose, minimizing what is necessary, considering impact, making responsibilities clear and reviewing decisions when context changes.
+
+For this lab, one lesson is especially useful:
 
 > **Do not expose more information than the task actually requires.**
 
@@ -26,9 +24,7 @@ This is not a GDPR project, and not every AI use case requires a DPIA.
 
 ## Agile thinking
 
-AI tools, capabilities and habits change quickly. A static response will therefore have limits.
-
-Our approach stays simple:
+AI tools, capabilities and habits change quickly. A static answer will have limits.
 
 ```text
 UNDERSTAND
@@ -38,28 +34,45 @@ TEST
 LEARN
    ↓
 BUILD
+   ↺
 ```
 
-This is not about Scrum.
+This is not about Scrum. It is about starting from reality, testing assumptions and changing the response when reality proves us wrong.
 
-It is about starting from reality, testing assumptions and changing our response when reality proves us wrong.
+## RCCM
+
+The Root Cause Countermeasure approach comes from industrial problem solving.
+
+The useful principle here is simple:
+
+> **Fix the cause, not the symptom.**
+
+If employees use unapproved AI, blocking a website may address only the visible behavior. The root cause may be a legitimate business need with no usable approved alternative.
+
+Understanding that difference changes the response.
+
+## Attacker mindset
+
+After understanding the business value and the use case, change perspective:
+
+> **If I wanted to damage this value for my own benefit, what would I try to achieve?**
+
+Then remove the attacker and ask what could simply fail or go wrong.
+
+The result should be a clear security objective, not an endless list of theoretical threats.
 
 ## Sun Tzu
 
-Some ideas from *The Art of War* also resonate with the problem.
+Some ideas from *The Art of War* also resonate with the approach.
 
-**Know yourself.** Understand your information, users, business needs, exposure and existing controls.
+**Know yourself.** Understand your business value, information, people, processes, exposure and existing controls.
 
 **Know the environment.** Understand how AI is actually being used, not how the organization assumes it is being used.
 
-**Adapt.** Trying to block every possible AI use may simply move the behaviour somewhere less visible.
-
-The useful question becomes:
-
-> **What can we realistically control, and where do we need people to make good decisions?**
+**Adapt.** Trying to block every possible AI use may simply move the behavior somewhere less visible.
 
 ## What stays constant
 
-Keep the problem understandable. Minimize unnecessary exposure. Make responsibility explicit. Observe reality and adapt when it changes.
+Start with the problem, not the framework. Start with business value. Understand why people use AI. Minimize unnecessary exposure. Keep responsibility explicit. Fix root causes. Prove countermeasures in reality. Learn and improve.
 
-Do not add complexity before the problem requires it.
+> **Build. Break. Understand. Rebuild better.**
