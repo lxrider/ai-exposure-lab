@@ -33,28 +33,47 @@ How do we know the playbook works?
 
 ## First example — AI-assisted candidate review
 
-**Use case**  
+**Use case**
+
 A recruiter wants AI assistance to review candidate information more quickly.
 
-**Business value**  
+**Business value**
+
 Reduce screening time while preserving recruitment quality, candidate trust and appropriate handling of candidate information.
 
-**Risk**  
-Candidate data may leave the approved recruitment process through a personal AI account. AI may also move from summarization into comparison or ranking without clear human ownership.
+**Risk**
 
-**Safe path**  
-Keep candidate processing inside the approved HR/recruitment environment. If the organization already has an approved ATS, prefer an approved AI capability or approved integration within that environment rather than copying candidate data into a personal general-purpose AI account.
+Candidate information may contain personal data.
+
+Using a personal or unapproved AI service may result in unauthorized disclosure or transfer of personal data outside the approved recruitment process.
+
+AI may also move from summarization into comparison or ranking without clear human ownership of the hiring decision.
+
+**Safe path**
+
+Keep candidate processing inside the organization's approved recruitment environment.
+
+If the organization already has an approved ATS, the safer path may be to use an approved AI capability or integration within that environment rather than moving candidate data to a personal general-purpose AI account.
+
+This addresses the channel and exposure problem without denying the business need.
+
+It does not automatically answer every delegation, HR or Legal/Privacy question.
+
+> **Approved tool ≠ approved use case.**
 
 **Rules**
 
 - expose only the candidate information required for the task;
-- do not move candidate information to a personal AI account;
+- do not move candidate personal data outside the approved recruitment environment without authorized conditions;
 - distinguish summarization from comparison, scoring or ranking;
 - keep the hiring decision human-owned and reviewable;
-- use only AI capabilities or integrations that have been approved for the use case.
+- use only AI capabilities or integrations approved for the use case.
 
-**Human role**  
-The recruiter remains responsible for reviewing the result and the hiring process. HR, Legal/Privacy and Security review the conditions when the use goes beyond simple assistance.
+**Human role**
+
+The recruiter remains responsible for reviewing the result and the hiring process.
+
+HR, Legal/Privacy and Security review the conditions when AI use goes beyond simple assistance.
 
 **Proof**
 
@@ -68,4 +87,6 @@ The recruiter remains responsible for reviewing the result and the hiring proces
 
 When the same validated rule appears across several playbooks, it becomes a candidate for organizational policy.
 
-Do not promote a rule because it sounds good. Promote it because multiple real use cases show that it is necessary, understandable and workable.
+Do not promote a rule because it sounds good.
+
+Promote it because multiple real use cases show that it is necessary, understandable and workable.

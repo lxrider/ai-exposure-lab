@@ -1,16 +1,21 @@
 # Quick AI Use Case Review
 
-This review is deliberately short. Start with one real use case, not a framework or a list of controls.
+This review is deliberately short.
+
+Start with one real use case, not a framework or a list of controls.
 
 ## 1. Business first
 
-**What are we trying to achieve?**  
+**What are we trying to achieve?**
+
 What result does the team expect?
 
-**Why is AI being used?**  
+**Why is AI being used?**
+
 What problem, friction or repetitive task does it solve?
 
-**What has value?**  
+**What has value?**
+
 People, customers, data, knowledge, intellectual property, decisions, operations, reputation, money, availability?
 
 **Why could this use become a problem for the business?**
@@ -55,8 +60,10 @@ Read → Search → Create → Send → Modify → Execute → Delete
 
 Put yourself in an attacker's shoes.
 
-**What value would I target?**  
-**What could I steal, manipulate, influence, disrupt or abuse?**  
+**What value would I target?**
+
+**What could I steal, manipulate, influence, disrupt or abuse?**
+
 **What would be my objective?**
 
 Then remove the attacker.
@@ -68,6 +75,32 @@ Consider bad input, wrong reasoning, over-reliance, excessive permissions, accid
 ## 4. Define the objective
 
 What must remain true for the business?
+
+Security objectives can remain simple:
+
+```text
+CONFIDENTIALITY
+The wrong people or AI services must not receive the information.
+
+INTEGRITY
+Information, reasoning or decisions must not be improperly altered or influenced.
+
+AVAILABILITY
+AI must not unnecessarily disrupt the service or business process.
+
+AUTHORITY
+AI must not exceed what it is allowed to do.
+
+ACCOUNTABILITY
+We must know who remains responsible.
+
+TRACEABILITY
+We must be able to understand what happened and why.
+```
+
+Not every use case needs all six.
+
+Use only the objectives that matter for the business value at stake.
 
 Examples:
 
@@ -91,7 +124,9 @@ Do not confuse the problem with the visible symptom.
 
 Why can this situation happen?
 
-Use the Five Whys if useful. Do not stop at "the user made a mistake".
+Use the Five Whys if useful.
+
+Do not stop at "the user made a mistake".
 
 ### Countermeasure
 
@@ -124,6 +159,8 @@ STOP
 
 Record three things:
 
-**Owner** — who owns the business decision?  
-**Quick win** — what can we improve now?  
+**Owner** — who owns the business decision?
+
+**Quick win** — what can we improve now?
+
 **Playbook** — does this use case teach a reusable way of working?
