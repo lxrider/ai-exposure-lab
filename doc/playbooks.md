@@ -34,7 +34,7 @@ How do we know the playbook works?
 ## First example — AI-assisted candidate review
 
 **Use case**  
-Henri wants AI assistance to review candidate information more quickly.
+A recruiter wants AI assistance to review candidate information more quickly.
 
 **Business value**  
 Reduce screening time while preserving recruitment quality, candidate trust and appropriate handling of candidate information.
@@ -43,7 +43,7 @@ Reduce screening time while preserving recruitment quality, candidate trust and 
 Candidate data may leave the approved recruitment process through a personal AI account. AI may also move from summarization into comparison or ranking without clear human ownership.
 
 **Safe path**  
-Keep candidate processing inside the approved HR/recruitment environment. If Teamtailor is the approved ATS, prefer an approved AI capability or approved integration around that environment rather than copying candidate data into a personal general-purpose AI account.
+Keep candidate processing inside the approved HR/recruitment environment. If the organization already has an approved ATS, prefer an approved AI capability or approved integration within that environment rather than copying candidate data into a personal general-purpose AI account.
 
 **Rules**
 
@@ -58,7 +58,7 @@ The recruiter remains responsible for reviewing the result and the hiring proces
 
 **Proof**
 
-- Can Henri achieve the time-saving objective through the approved path?
+- Can the recruiter achieve the time-saving objective through the approved path?
 - Can candidate data still be copied to an unapproved AI service?
 - Does the approved solution expose only what is necessary?
 - Is AI-generated comparison or ranking visible and reviewable?

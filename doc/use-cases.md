@@ -6,7 +6,7 @@ For each case, start with the business need, run `quick-review.md`, challenge th
 
 ## 1. HR / Talent Acquisition — AI-assisted candidate screening
 
-Henri works in Talent Acquisition. The team wants to reduce the time spent reviewing applications and preparing shortlists.
+A Talent Acquisition team wants to reduce the time spent reviewing applications and preparing shortlists.
 
 A tempting shortcut is to copy CVs into a personal general-purpose AI account.
 
@@ -37,7 +37,7 @@ Questions to test:
 
 ### Countermeasure hypothesis
 
-If Teamtailor is already the approved recruitment environment in the organization, the safest path may be to keep the use case there, using an **approved AI capability or approved integration**, instead of moving candidate data to a personal AI account.
+If the organization already has an approved ATS, the safer path may be to keep candidate processing inside that environment and use an **approved AI capability or approved integration**, rather than moving candidate data to a personal general-purpose AI account.
 
 This addresses the channel and exposure problem without denying the business need.
 
