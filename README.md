@@ -151,6 +151,33 @@ The objective is not to say **no** to AI.
 It is to understand why people use it, protect what matters and enable safer
 use.
 
+## External drivers
+
+The lab starts from real business use cases, but governance does not emerge
+from observation alone.
+
+Organizations may also have non-negotiable legal, contractual or regulatory
+requirements.
+
+In Europe, NIS2 is one example.
+
+Its risk-management approach covers areas such as:
+
+- governance and risk management
+- incident management
+- business continuity
+- supply-chain security
+- secure acquisition, development and maintenance
+- effectiveness of security measures
+- cyber hygiene and training
+
+These requirements belong to the **top-down** side of the model.
+
+They define what must be achieved.
+
+The lab then uses real use cases to understand how those objectives can be met
+in practice without losing sight of the business need.
+
 ## Quick start
 
 1. Pick one real AI use case from a team.
