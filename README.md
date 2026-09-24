@@ -1,6 +1,6 @@
-# AI Exposure Lab
+# AI Exposure Lab ✈️
 
-> **Is there a pilot in the plane? ✈️**
+> **Is there a pilot in the plane?**
 
 **A practical lab to help organizations start governing AI use at work.**
 
