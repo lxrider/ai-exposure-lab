@@ -19,10 +19,14 @@ may exercise and who remains responsible**.
 
 ## Where this lab fits
 
-AI Exposure Lab is a lightweight way to examine a real AI use case before choosing controls or governance mechanisms.
+AI Exposure Lab is a lightweight way to examine a real AI use case before
+choosing controls or governance mechanisms.
 
-It starts with four questions:
+It starts with four simple questions:
 
+| Dimension | Question |
+|---|---|
+| **Channel** | Where does AI use happen? |
 | **Exposure** | What information reaches AI? |
 | **Cognitive delegation** | What thinking or decision-making are we delegating? |
 | **Action delegation** | What execution are we delegating? |
@@ -44,11 +48,14 @@ What can the agent technically do?
 
 DELEGATED TASK AUTHORITY
 What may the agent legitimately do for this task?
+```
 
-The lab reuses established ideas from AI risk management, threat modelling, least privilege, delegated authorization, human oversight and auditability.
+The lab reuses established ideas from AI risk management, threat modelling,
+least privilege, delegated authorization, human oversight and auditability.
 
 The useful part is the path between them:
 
+```text
 OBSERVED USE
     ↓
 UNDERSTAND
@@ -62,8 +69,10 @@ COUNTERMEASURE
 PROVE IT
     ↓
 PLAYBOOK / POLICY
+```
 
-For broader governance and more specialized agent-security models, see [Related work](doc/related-work.md).
+For broader governance and more specialized agent-security models, see
+[Related work](doc/related-work.md).
 
 ## Start with the business
 
@@ -252,13 +261,13 @@ In Europe, NIS2 is one example.
 
 Its risk-management approach covers areas such as:
 
-- governance and risk management
-- incident management
-- business continuity
-- supply-chain security
-- secure acquisition, development and maintenance
-- effectiveness of security measures
-- cyber hygiene and training
+- governance and risk management;
+- incident management;
+- business continuity;
+- supply-chain security;
+- secure acquisition, development and maintenance;
+- effectiveness of security measures;
+- cyber hygiene and training.
 
 These requirements belong to the **top-down** side of the model.
 
