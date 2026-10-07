@@ -24,6 +24,10 @@ How can the team achieve the same result more safely?
 RULES
 What must / must not happen?
 
+AUTHORITY — if AI can act
+What may AI legitimately do for this task,
+and what remains outside its authority?
+
 HUMAN ROLE
 Who validates, decides or remains accountable?
 
@@ -49,6 +53,8 @@ Using a personal or unapproved AI service may result in unauthorized disclosure 
 
 AI may also move from summarization into comparison or ranking without clear human ownership of the hiring decision.
 
+If AI is later allowed to update the ATS, schedule interviews or trigger workflow decisions, the use also becomes an authority problem: the recruiter's access must not silently become broad agent authority.
+
 **Safe path**
 
 Keep candidate processing inside the organization's approved recruitment environment.
@@ -57,7 +63,7 @@ If the organization already has an approved ATS, the safer path may be to use an
 
 This addresses the channel and exposure problem without denying the business need.
 
-It does not automatically answer every delegation, HR or Legal/Privacy question.
+It does not automatically answer every delegation, authority, HR or Legal/Privacy question.
 
 > **Approved tool ≠ approved use case.**
 
@@ -67,7 +73,14 @@ It does not automatically answer every delegation, HR or Legal/Privacy question.
 - do not move candidate personal data outside the approved recruitment environment without authorized conditions;
 - distinguish summarization from comparison, scoring or ranking;
 - keep the hiring decision human-owned and reviewable;
-- use only AI capabilities or integrations approved for the use case.
+- use only AI capabilities or integrations approved for the use case;
+- if AI can cause an effect, do not infer broad agent authority from the recruiter's access rights.
+
+**Authority — if AI can act**
+
+For the assistance-only path, no direct action authority is required.
+
+If AI can update the ATS or trigger a workflow, define the permitted action, candidate or resource, duration and approval conditions for that task. Anything outside that scope remains out of authority.
 
 **Human role**
 
@@ -81,6 +94,8 @@ HR, Legal/Privacy and Security review the conditions when AI use goes beyond sim
 - Can candidate data still be copied to an unapproved AI service?
 - Does the approved solution expose only what is necessary?
 - Is AI-generated comparison or ranking visible and reviewable?
+- If AI can act, is an action outside its delegated task authority blocked?
+- If AI can act, can a significant effect be traced back to the task and authority that allowed it?
 - Is the approved path simple enough that people will actually use it?
 
 ## From playbooks to policy

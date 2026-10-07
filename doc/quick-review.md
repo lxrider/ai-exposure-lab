@@ -50,11 +50,38 @@ Summarize → Analyze → Compare → Infer → Reason → Recommend → Plan �
 
 ### Action delegation
 
-What can AI actually do?
+What execution are we delegating to AI?
 
 ```text
 Read → Search → Create → Send → Modify → Execute → Delete
 ```
+
+### Agentic authority checkpoint — only if AI can cause an effect
+
+Separate what is technically possible from what has actually been authorized.
+
+```text
+USER / SERVICE PERMISSION
+What can the principal do?
+
+AGENT TECHNICAL CAPABILITY
+What can the agent technically do through its tools or credentials?
+
+DELEGATED TASK AUTHORITY
+What may the agent legitimately do for this specific task?
+```
+
+Ask:
+
+- Who delegated the authority?
+- To which agent or service?
+- For which task or purpose?
+- Which actions and resources are in scope?
+- For how long?
+- Can that authority be reduced or revoked?
+- Can the resulting effect be traced back to the task and authority that allowed it?
+
+Do not assume that a user's or service's permissions are automatically delegated to AI.
 
 ## 3. Break it
 
@@ -70,7 +97,7 @@ Then remove the attacker.
 
 **What could simply go wrong?**
 
-Consider bad input, wrong reasoning, over-reliance, excessive permissions, accidental disclosure or an unsafe automated action.
+Consider bad input, wrong reasoning, over-reliance, excessive technical permissions, accidental disclosure, unsafe automated action, authority inferred from ambiguous input, or authority that remains usable after it should have expired or been revoked.
 
 ## 4. Define the objective
 
@@ -89,13 +116,13 @@ AVAILABILITY
 AI must not unnecessarily disrupt the service or business process.
 
 AUTHORITY
-AI must not exceed what it is allowed to do.
+AI must not exercise more authority than was legitimately delegated for the current task.
 
 ACCOUNTABILITY
 We must know who remains responsible.
 
 TRACEABILITY
-We must be able to understand what happened and why.
+We must be able to reconstruct what happened, who or what caused it, under whose authority and why it was allowed.
 ```
 
 Not every use case needs all six.
@@ -107,8 +134,8 @@ Examples:
 - customer information must not reach an unauthorized service;
 - candidate selection must remain reviewable and human-owned;
 - an AI-generated command must not be executed blindly in production;
-- an agent must not modify production without the required authorization;
-- significant actions must remain traceable.
+- an agent must not modify production outside the authority delegated for the task;
+- significant actions must remain traceable to the task and authority that caused them.
 
 Keep the objective understandable and testable.
 
@@ -132,7 +159,7 @@ Do not stop at "the user made a mistake".
 
 What is the smallest durable response that addresses the cause?
 
-Possible responses include minimizing information, using an approved environment, clarifying disclosure rules, requiring human validation, reducing agent permissions, adding an approval step or logging important actions.
+Possible responses include minimizing information, using an approved environment, clarifying disclosure rules, requiring human validation, reducing technical permissions, bounding task authority, requiring approval before authority expands, validating authority before a significant effect, or logging important actions.
 
 ## 6. Prove it
 
@@ -143,6 +170,12 @@ Test the countermeasure.
 - Are there obvious bypasses?
 - Did we reduce the risk or merely move it?
 - Did we create so much friction that people will work around it?
+
+If AI can cause an effect, also test:
+
+- Can it perform an action outside the delegated task authority?
+- Can it still act after that authority expires or is revoked?
+- Can the resulting effect be traced back to the task and authority that allowed it?
 
 If it fails, learn why and improve it.
 
