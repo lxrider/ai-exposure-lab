@@ -42,11 +42,19 @@ The following are **policy candidates**, not a finished policy:
 - do not expose credentials or authentication secrets to general-purpose AI
   services;
 - keep clear human ownership for high-impact business decisions;
-- give AI agents only the permissions required for their task;
-- make significant AI actions traceable;
+- give action-taking AI only the technical access required to operate;
+- do not treat a user's or service's permissions as authority automatically
+  delegated to an AI agent;
+- bound agent authority to the task, relevant resources and duration;
+- require explicit authorization when an agent needs to expand beyond its
+  existing task authority;
+- significant agent actions should verify that authority is still valid before
+  producing the effect;
+- make significant AI actions traceable to the principal, task, authority and
+  resulting effect;
 - provide a usable approved path when AI creates legitimate business value;
-- review supplier AI usage when the supplier handles important company value
-  or information.
+- review supplier AI usage when the supplier handles important company value,
+  information or delegated authority.
 
 ## Validation
 
@@ -60,15 +68,16 @@ Does it still allow the expected result?
 Does it protect the value against relevant abuse and failure?
 
 **HR**  
-Does cognitive delegation change roles, skills, responsibilities or work
-organization?
+Does cognitive or action delegation change roles, skills, responsibilities or
+work organization?
 
 **Legal / Privacy**  
 Are disclosure, personal data, contracts, intellectual property and
 responsibility properly addressed?
 
 **IT / Architecture**  
-Can the safe path be operated and controlled?
+Can the safe path be operated and controlled? For action-taking AI, can task
+authority be bounded, validated and revoked where effects occur?
 
 **Procurement / Third Party**  
 Do supplier commitments and evidence match the requirement?

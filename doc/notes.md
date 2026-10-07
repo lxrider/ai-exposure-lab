@@ -61,6 +61,45 @@ Then remove the attacker and ask what could simply fail or go wrong.
 
 The result should be a clear security objective, not an endless list of theoretical threats.
 
+## When AI can act
+
+Giving AI access to a tool does not answer whether it is legitimate for AI to use that tool for every task.
+
+Three things must remain distinct:
+
+```text
+USER / SERVICE PERMISSION
+What the principal is allowed to do.
+
+AGENT TECHNICAL CAPABILITY
+What the agent can technically do.
+
+DELEGATED TASK AUTHORITY
+What the agent is legitimately allowed to exercise for the current task.
+```
+
+A principal's broad permission should not silently become an agent's authority.
+
+Two working principles follow:
+
+> **Ambiguity must not silently create authority.**
+
+> **Model output may propose an action; it does not create authority to perform it.**
+
+For this lab, these are practical security principles rather than a complete technical architecture. The lab asks whether the distinction is understood, bounded and testable. It does not prescribe OAuth, policy engines, MCP, capability systems or any other implementation.
+
+The deeper technical questions are:
+
+```text
+DERIVATION
+How did this task obtain this authority?
+
+CONTINUITY
+Is that authority still bounded and valid when the effect occurs?
+```
+
+Those questions are deliberately kept at the edge of this lab. They become a separate architecture problem when deeper implementation work is required.
+
 ## Sun Tzu
 
 Some ideas from *The Art of War* also resonate with the approach.
@@ -73,6 +112,6 @@ Some ideas from *The Art of War* also resonate with the approach.
 
 ## What stays constant
 
-Start with the problem, not the framework. Start with business value. Understand why people use AI. Minimize unnecessary exposure. Keep responsibility explicit. Fix root causes. Prove countermeasures in reality. Learn and improve.
+Start with the problem, not the framework. Start with business value. Understand why people use AI. Minimize unnecessary exposure. Keep responsibility and authority explicit. Fix root causes. Prove countermeasures in reality. Learn and improve.
 
 > **Build. Break. Understand. Rebuild better.**

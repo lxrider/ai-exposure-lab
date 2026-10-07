@@ -12,8 +12,8 @@ That is not the problem.
 
 People use AI because it creates value. The problem starts when we no longer
 clearly understand **why it is being used, what business value is at stake,
-what we expose to it, what we delegate to it, what it can do and who remains
-responsible**.
+what we expose to it, what thinking and action we delegate, what authority it
+may exercise and who remains responsible**.
 
 > **Start with the problem, not the framework.**
 
@@ -46,7 +46,7 @@ COGNITIVE DELEGATION
 What thinking do we give AI?
 
 ACTION DELEGATION
-What can AI actually do?
+What execution do we delegate to AI?
 ```
 
 Exposure may involve emails, source code, customer data, HR data, architecture,
@@ -61,6 +61,43 @@ or deleting.
 An approved tool does not automatically make every use case approved.
 
 > **Access right ≠ disclosure authority.**
+
+## When AI can cause an effect
+
+When AI moves from advice to direct action, one more distinction becomes
+important:
+
+```text
+USER / SERVICE PERMISSION
+What can the principal do?
+
+        ≠
+
+AGENT TECHNICAL CAPABILITY
+What can the agent technically do through its tools and credentials?
+
+        ≠
+
+DELEGATED TASK AUTHORITY
+What may the agent legitimately do for this specific task?
+```
+
+A user's broad access should not silently become an agent's authority.
+
+For action-taking AI, ask:
+
+- who delegated the authority;
+- to which agent or service;
+- for which task or purpose;
+- which actions and resources are in scope;
+- for how long;
+- whether the authority can be reduced or revoked;
+- whether the resulting effect can later be reconstructed.
+
+> **Access right ≠ disclosure authority ≠ action authority.**
+
+See [Agentic Authority](doc/agentic-authority.md) for the minimal model used by
+this lab.
 
 ## Break it
 
@@ -114,6 +151,10 @@ Test the risky path.
 Test the approved path.
 
 Look for obvious bypasses.
+
+For action-taking AI, also test whether an action outside the delegated task
+authority is blocked, whether expired or revoked authority is rejected, and
+whether a significant effect can be traced back to the task that caused it.
 
 Check whether the team can still achieve the expected business result.
 
@@ -182,11 +223,12 @@ in practice without losing sight of the business need.
 
 1. Pick one real AI use case from a team.
 2. Run the [Quick AI Use Case Review](doc/quick-review.md).
-3. Challenge the risky parts and find the root cause.
-4. Define the smallest useful countermeasure.
-5. Prove it works in reality.
-6. Turn the result into a short [playbook](doc/playbooks.md).
-7. Promote only recurring, validated rules into [policy](doc/policy.md).
+3. If AI can cause an effect, run the agentic authority checkpoint.
+4. Challenge the risky parts and find the root cause.
+5. Define the smallest useful countermeasure.
+6. Prove it works in reality.
+7. Turn the result into a short [playbook](doc/playbooks.md).
+8. Promote only recurring, validated rules into [policy](doc/policy.md).
 
 The initial lab uses five practical areas: **HR / Talent Acquisition, Sales,
 SysAdmin, Development and Suppliers / Third Parties**.
