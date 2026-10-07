@@ -23,34 +23,47 @@ AI Exposure Lab is a lightweight way to examine a real AI use case before choosi
 
 It starts with four questions:
 
-**CHANNEL**  
-Where does AI use happen?
+| **Exposure** | What information reaches AI? |
+| **Cognitive delegation** | What thinking or decision-making are we delegating? |
+| **Action delegation** | What execution are we delegating? |
 
-**EXPOSURE**  
-What information reaches AI?
+### When AI can act
 
-**COGNITIVE DELEGATION**  
-What thinking or decision-making are we delegating?
+If AI can cause a real-world effect, there is another distinction to make:
 
-**ACTION DELEGATION**  
-What execution are we delegating?
-
-When AI can cause a real-world effect, the review goes one step further:
-
-**USER / SERVICE PERMISSION**  
+```text
+USER / SERVICE PERMISSION
 What can the principal do?
 
-**AGENT TECHNICAL CAPABILITY**  
+        ≠
+
+AGENT TECHNICAL CAPABILITY
 What can the agent technically do?
 
-**DELEGATED TASK AUTHORITY**  
+        ≠
+
+DELEGATED TASK AUTHORITY
 What may the agent legitimately do for this task?
 
 The lab reuses established ideas from AI risk management, threat modelling, least privilege, delegated authorization, human oversight and auditability.
 
-Its contribution is the workflow: start from observed use, identify the real problem, apply the smallest useful countermeasure, test it, then reuse what was learned in playbooks and policy.
+The useful part is the path between them:
 
-For deeper governance and agent-security models, see [Related work](doc/related-work.md).
+OBSERVED USE
+    ↓
+UNDERSTAND
+    ↓
+BREAK IT
+    ↓
+ROOT CAUSE
+    ↓
+COUNTERMEASURE
+    ↓
+PROVE IT
+    ↓
+PLAYBOOK / POLICY
+
+For broader governance and more specialized agent-security models, see [Related work](doc/related-work.md).
 
 ## Start with the business
 
